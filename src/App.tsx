@@ -1,6 +1,18 @@
+import { BrowserRouter, Redirect, Route, RouteProps, Switch } from 'react-router-dom';
+
+import { Home } from "./pages/Home";
+
+// import { AuthContextProvider } from './contexts/AuthContext';
+
 function App() {
   return (
-    <h1>Hello World</h1>
+    <BrowserRouter>
+      {/* <AuthContextProvider> */}
+        <Switch>
+          <Route path="/" exact component={Home}></Route>
+        </Switch>
+      {/* </AuthContextProvider> */}
+    </BrowserRouter>
   );
 }
 
