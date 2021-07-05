@@ -1,0 +1,57 @@
+#desc-page {
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+
+    .desc-content {
+      margin: 0 auto;
+      max-width: 450px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      .row {
+        display: flex;
+
+        .col {
+          display: flex;
+          align-items: center;
+
+          table {
+            padding: 5px;
+            border-radius: 4px;
+            background: #00000047;
+            color: #000;
+
+            td,
+            th {
+              padding: 5px;
+            }
+          }
+        }
+      }
+
+      ul {
+        display: flex;
+
+        li {
+          width: max-content;
+          padding: 10px;
+          margin: 5px;
+          font-size: 13px;
+          border-radius: 999px;
+          background: #000;
+          color: #fff;
+          text-transform: uppercase;
+          list-style-type: none;
+        }
+      }
+    }
+  }
+}

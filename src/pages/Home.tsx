@@ -1,4 +1,5 @@
 import { FormEvent, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import logoImg from '../assets/images/pokeapi-logo.png';
 
@@ -6,11 +7,12 @@ import { Button } from '../components/Button';
 
 // import api from "../services/api";
 
-import '../styles/auth.scss';
 
+import '../styles/auth.scss';
 
 export function Home() {
     const [loginValues, setLoginValues] = useState();
+
     
     async function handleSignUp(event: FormEvent) {
         event.preventDefault();
@@ -42,9 +44,11 @@ export function Home() {
                             type="password"
                             placeholder="Digite sua senha"
                         />
-                        <Button type="submit">
-                            Entre no POKEAPI
-                        </Button>
+                        <Link to="/list/offset=0">
+                            <Button type="submit">
+                                Entre no POKEAPI
+                            </Button>
+                        </Link>
                     </form>
                 </div>
             </main>
